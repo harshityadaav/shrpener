@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+           background-image: url('bg.jpg');
+           background-repeat: no-repeat; 
+           background-size: cover;
+           width:100%;
+           height: auto;
+           margin: 10px;
+           padding: 50px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+               
+        }
+        .elements{
+            border: 2px solid black;
+            height: max-content;
+            width: max-content;
+          
+        }
+      
+        #heading,#para{
+            text-align: center;
+        }
+        #id2{
+            margin: 10px;
+            padding: 30px;
+            background-color: rgb(191, 206, 174);
+            border-radius: 10px;
+        }
+        #form{
+           padding: 5px;
+        }
+       form input,textarea{
+        width: 98%;
+        height: 20px;
+        border-radius: 4px;
+       }
+       #time{
+        width: 48%;
+       }
+       #call{
+      height:30px;
+      background-color: rgb(246, 255, 0);
+       }
+       #call:hover{
+        background-color: aqua;
+        font-size: 150%;
+       }
+       #id3{
+      display: flex;
+      border: none;
+       }
+       .items{
+        margin: 5px; 
+       }
+       #id1{
+        border: none;
+        
+       }
+       #id1 a{
+        color: red;
+        font: .7cm bold italic;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="elements" id="id1"><a href="index.html">HomePage</a></div>
+        <div class="elements" id="id2">
+             <div id="heading"><h1>Book a call</h1></div>
+             <div id="para"><p>book a call slot and representative will call you back within a few second...</p></div><hr>
+             <div>
+                <form action="" id="form">
+                     <label for="name">Enter Your Name : </label><br>
+                     <input  type="text" name="name" id="name"><br><br>
+                     <label for="email">Enter Your Email-id : </label><br>
+                     <input  type="email" name="email" id="email"><br><br>
+                     <label for="phone">Enter Your Phone number : </label><br>
+                     <input  type="number" name="phone" id="phone"><br><br>
+                     <label for="time">Time for Call : </label>
+                     <div class="sid">
+                     <input type="date" name="time" id="time">
+                     <input type="time" name="time" id="time"></div><br>
+                    <input type="button" value="GET A CALL" id="call">
+                </form>
+            </div>
+       </div>
+        <div class="elements" id="id3">
+            <div class="items" id="item1"><button>About</button></div>
+            <div class="items" id="item2"><button>Contacts</button></div>
+        </div>
+    </div>
+</body>
+</html>
